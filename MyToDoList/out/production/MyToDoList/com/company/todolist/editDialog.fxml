@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0">
+    <content>
+
+            <GridPane vgap = "10" hgap = "10">
+                <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                </Label>
+                <TextArea  wrapText="true" fx:id="name" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <Label text="Details:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <TextArea wrapText="true"  fx:id="details" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                <Label text="Date:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                <DatePicker fx:id="datedue" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+
+            </GridPane>
+
+    </content>
+
+</DialogPane>

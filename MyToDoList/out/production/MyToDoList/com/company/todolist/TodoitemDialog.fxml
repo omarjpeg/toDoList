@@ -1,0 +1,22 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane fx:controller="com.company.todolist.DialogController"
+            xmlns:fx="http://javafx.com/fxml" >
+    <headerText>
+        just text , header text is the text property, content is a string
+    </headerText>
+    <content>
+        <GridPane vgap = "10" hgap = "10">
+            <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            </Label>
+            <TextArea  wrapText="true" fx:id="name" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Details:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextArea wrapText="true"  fx:id="details" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Label text="Date:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <DatePicker fx:id="datedue" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+
+        </GridPane>
+
+    </content>
+</DialogPane>
